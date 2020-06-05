@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="menu">
+                <img src="img/menu.ico" alt="" srcset="">
+            </div>
+            <div id="top-nav">
+                <ul class="nav">
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li>Prijava</li>
+                    <li>Registracija</li>
+                </ul>
+            </div>
+            <a href="index.html"><div id="logo">
+                <img src="img/logo.png" alt="" srcset="">
+            </div></a>
+            <nav>
+                <ul class="nav">
+                    <li>Gitare</li>
+                    <li>Bas gitare</li>
+                    <li>Klavijature</li>
+                    <li>Bubnjevi</li>
+                    <li>Saksofoni</li>
+                    <li class="drop">
+                        Ostali instrumenti
+                        <ul class="drop-list">
+                            <li>Ukulele</li>
+                            <li>Harfe</li>
+                            <li>Flaute</li>
+                            <li>Trube</li>
+                            <li>Viola</li>
+                            <li>Harmonike</li>
+                            <li>Sintisajzeri</li>
+                        </ul>
+                    </li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                </ul>
+            </nav>
+            <div id="pretraga">
+                <form>
+                    <input type="text">
+                    <button type="button"><img src="img/lupa.ico" alt="" srcset=""></button>
+                </form>
+            </div>
+        </header>
+        <main id="kontakt">
+          <h1>Kontakt:</h1><hr>
+          <div class="adresa">
+                <h3>Novi Sad</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1404.4825004356912!2d19.84361!3d45.2485005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b106ca80926ab%3A0x55b30e59bbf949b0!2sSutjeska+2%2C+Novi+Sad+21000!5e0!3m2!1ssr!2srs!4v1565286933505!5m2!1ssr!2srs" width="90%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <h4>Sutjeska 2, SPC SPENS</h4>
+                <p>+381 21 450 800</p>
+                <p>Radno vreme: 10h - 20h</p>
+                <p>Radno vreme subotom: 10h - 16h</p>
+          </div>
+          <div class="adresa">
+                <h3>Beograd</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.6594905775833!2d20.45785121589685!3d44.8081276790986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa91ef9016b%3A0xc115d357b74c3fcb!2z0JDQtNC80LjRgNCw0LvQsCDQk9C10L_RgNCw0YLQsCAxMCwg0JHQtdC-0LPRgNCw0LQgMTEwMDA!5e0!3m2!1ssr!2srs!4v1565287142937!5m2!1ssr!2srs" width="90%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <h4>Admirala Geprata 10</h4>
+                <p>+381 11 664 99 99</p>
+                <p>Radno vreme: 10h - 20h</p>
+                <p>Radno vreme subotom: 10h - 16h</p>
+          </div>
+          <div class="adresa">
+                <h3>Niš</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.8260329787663!2d21.891768915857387!3d43.317901079134145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b1ec05426d8f%3A0x1ef73ca8319d5727!2sObrenoviceva+44%2CTC+kalca+lokal+47+lamela+B%2Ckozmeticki+salon+Mary+Poppins+cosmetics!5e0!3m2!1ssr!2srs!4v1565287268492!5m2!1ssr!2srs" width="90%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <h4>Obrenovićeva BB, TC Kalča</h4>
+                <p>+381 18 250 670</p>
+                <p>Radno vreme: 10h - 18h</p>
+                <p>Radno vreme subotom: 10h - 16h</p>
+          </div>
+          <hr>
+          <form name="forma" >
+              <input type="text" name="ime" placeholder="Vaše ime:">
+              <input type="email" name="email" placeholder="Vaš email:">
+              <textarea name="poruka" placeholder="Vaša poruka:"  ></textarea>
+              <div id="obavestenje"></div>
+              <button type="button" onclick="provera()">Pošalji poruku</button>
+          </form>
+        </main>
+        <footer>
+            <ul>
+                <li>Gitare</li>
+                <li>Bas gitare</li>
+                <li>Klavijature</li>
+                <li>Bubnjevi</li>
+            </ul>
+            <ul>
+                <li>Saksofoni</li>
+                <li>Ukulele</li>
+                <li>Harfe</li>
+            </ul>
+            <ul>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li>Prijava</li>
+                <li>Registracija</li>
+            </ul>
+            <img src="img/logo2.png" alt="" srcset="">
+        </footer>
+    </div>
+
+    <script src="kontakt.js"></script>
+</body>
+</html>

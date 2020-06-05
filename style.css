@@ -1,0 +1,554 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    background-color: gainsboro;
+}
+
+#container {
+    width: 1200px;
+    margin: auto;
+}
+
+header, main, footer {
+    width: 100%;
+    min-height: 200px;
+    background-color: white;
+}
+
+#menu {
+    position: absolute;
+    margin: 10px;
+    display: none;
+}
+
+#logo {
+    width: 400px;
+    height: 150px;
+    margin: auto;
+    animation: logo-animacija 1.5s;
+}
+#logo img {
+    width: 100%;
+}
+
+@keyframes logo-animacija {
+    from {
+        transform: scale(0.7);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.nav > li {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.nav > li:hover {
+    cursor: pointer;
+    color: darkgoldenrod;
+}
+.drop {
+    position: relative;
+}
+.drop:hover .drop-list {
+    display: block;
+}
+
+.drop-list {
+    display: none;
+    list-style-type: none;
+    text-align: left;
+    position: absolute;
+    padding: 10px 50px 10px 20px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    color: black;
+    top: 40px;
+    left: 10px;
+}
+.drop-list li {
+    height: 30px;
+    background-color: white;
+}
+.drop-list li:hover {
+    cursor: pointer;
+    color: darkgoldenrod;
+}
+
+
+#top-nav .nav {
+    text-align: right !important;
+}
+#top-nav .nav li {
+    border-left: 1px solid black;
+}
+#top-nav .nav li:first-child {
+    border-left: 0px;
+}
+
+
+#pretraga {
+    padding: 10px 0px;
+    background-color: gainsboro;
+}
+
+#pretraga form {
+    text-align: center;
+}
+
+#pretraga input {
+    width: 250px;
+}
+
+#pretraga input,
+#pretraga button {
+    height: 30px;
+    vertical-align: top;
+}
+#pretraga button {
+    width: 50px;
+    margin-left: -5px;
+}
+
+main {
+    padding: 10px 0px;
+}
+
+#slider {
+    margin-top: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 10px 30px;
+}
+
+.instrument {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    border: 1px solid gainsboro;
+    padding: 5px 20px;
+    text-align: center;
+    margin: 2.35%;
+    animation: logo-animacija 2s;
+}
+
+.instrument h3 {
+    margin: 0px;
+}
+.instrument h3:first-child {
+    height: 95px;
+}
+.instrument h3 span {
+    font-size: 95%;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.instrument > img {
+    width: 100%;
+
+}
+
+.instrument button {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.instrument button:hover {
+    background-color: lightgreen;
+    border: 1px solid green;
+}
+.instrument button > * {
+    vertical-align: middle;
+}
+.instrument button img {
+    position: relative;
+    top: -2px;
+}
+
+footer {
+    background-color: darkgray;
+    padding: 5px;
+    position: relative;
+}
+
+footer ul {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+   
+}
+
+footer li {
+    height: 25px;
+}
+
+footer img {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+/* 
+===========================================
+========= P O J E D I N A C N O ===========
+===========================================
+*/
+#pojedinacno {
+    padding: 10px 25px;
+}
+#pojedinacno h1 {
+    text-align: center;
+}
+#pojedinacno h2 {
+    margin-top: 50px;
+    font-weight: bold;
+}
+#pojedinacno p {
+    text-indent: 50px;
+}
+#pojedinacno b, th {
+    font-weight: bold;
+    vertical-align: top;
+}
+#pojedinacno table {
+    float: right;
+    width: 42%;
+   
+    animation: details-animacija 2s;
+    overflow: hidden;
+}
+
+@keyframes details-animacija {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+tr {
+    border: 1px solid gainsboro;
+}
+
+.prikaz-slika {
+    width: 55%;
+}
+.prikaz-slika img {
+    width: 100%;
+    border: 2px solid gainsboro;
+}
+.prikazana-slika {
+    width: 75%;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.slike-za-prikaz {
+    width: 24%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/* 
+===========================================
+============= K O N T A K T ===============
+===========================================
+*/
+
+#kontakt {
+    padding: 10px 25px;
+}
+.adresa {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    text-align: center;
+}
+.adresa h3 {
+    text-align: center;
+}
+.adresa h4 {
+    font-weight: bold;
+}
+
+#kontakt input,
+#kontakt textarea {
+    width: 100%;
+    border: 1px solid gray;
+    margin: 10px 0px;
+    padding: 0px 20px;
+    font-size: 18px;
+}
+
+#kontakt input {
+    height: 40px;
+}
+
+#kontakt textarea {
+    height: 300px;
+    padding-top: 10px;
+}
+#kontakt form {
+    text-align: right;
+}
+
+#kontakt button {
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#kontakt button:hover {
+    background-color: lightgreen;
+    border: 1px solid green;
+}
+
+#kontakt #obavestenje {
+    text-align: left;
+    padding: 10px 20px;
+    border: 2px solid darkred;
+    color: darkred;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: none;
+}
+
+
+/* 
+===========================================
+============ G A L E R I J A ==============
+===========================================
+*/
+#galerija {
+    padding: 25px;
+}
+
+#galerija div {
+    width: 33%;
+    border: 1px solid gainsboro;
+    display: inline-block;
+    animation: galery-animacija 1s;
+}
+
+@keyframes galery-animacija {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+#galerija img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+#galerija img:hover {
+    transform: scale(1.2);
+    border: 2px solid white;
+}
+
+
+/* 
+===========================================
+================= K O R P A ===============
+===========================================
+*/
+#korpa {
+    width : 100%;
+    height : 100%;
+    position : fixed;
+    z-index : 99;
+    background-color : rgba(0,0,0,0.4);
+}
+
+#korpa-prozor {
+    width  : 1000px;
+    height  : 600px;
+    overflow-y: scroll;
+    margin : auto;
+    margin-top : 200px;
+    background-color: white;
+    padding: 20px;
+}
+
+
+#korpa-prozor h2 {
+    text-align: center;
+}
+
+#korpa-prozor  img {
+    width: 60px;
+}
+
+
+#korpa-prozor  button {
+    width: 60px;
+}
+
+
+#korpa-prozor table,
+#korpa-prozor tr,
+#korpa-prozor td {
+    border: 1px solid gainsboro;
+}
+
+#korpa-prozor table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#korpa-prozor thead td {
+    font-weight: bold;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+#korpa-prozor td {
+    text-align: center;
+}
+
+#korpa-prozor td:first-of-type {
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+#korpa-brojac {
+    background-color: lightgreen;
+    padding: 5px 12px;
+    border-radius: 100px;
+}
+
+#izlaz {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+/* 
+===========================================
+=========== R E S P O N S I V E ===========
+===========================================
+*/
+@media only screen and (max-width: 1200px) {
+    #container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1166px) {
+    .instrument {
+        margin: 2.3%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .instrument {
+        width: 29%;
+        margin: 2%;
+    }
+}
+
+@media only screen and (max-width: 952px) {
+    .instrument {
+        width: 28%;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    footer img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .instrument {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #slider {
+        width: 100%;
+    }
+    #slider img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .instrument {
+        width: 90%;
+        margin: 4.5%;
+    }
+    footer img {
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 440px) {
+    nav .nav {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+    #logo {
+        margin-top: 20px;
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #logo {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #top-nav .nav li {
+        font-size: 14px !important;
+    }
+    footer img {
+        width: 150px;
+    }
+}
